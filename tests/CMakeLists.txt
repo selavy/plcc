@@ -1,0 +1,11 @@
+add_executable(unittest
+    first_test.cpp
+    unittest.cpp
+)
+target_link_libraries(unittest
+    PUBLIC
+        Catch2
+    PRIVATE
+        cxx_project_options
+        project_warnings
+)

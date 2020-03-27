@@ -5,7 +5,9 @@ add_executable(plcc
     )
 target_compile_features(plcc PUBLIC cxx_std_17)
 target_link_libraries(plcc
+    PUBLIC
+        cxxopts::cxxopts
     PRIVATE
-    cxx_project_options
-    project_warnings
+        cxx_project_options
+        project_warnings
 )
